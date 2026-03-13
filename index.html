@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Simulador Financiero IA</title>
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Simulador de Ahorro Inteligente</h1>
+
+<div class="panel">
+
+<label>Ingresos mensuales (COP)</label>
+<input type="number" id="ingresos">
+
+<label>Gastos mensuales (COP)</label>
+<input type="number" id="gastos">
+
+<label>Meta o sueño</label>
+<select id="meta">
+
+<option value="casa">Comprar casa</option>
+<option value="carro">Comprar carro</option>
+<option value="viaje">Viajar</option>
+<option value="estudio">Pagar estudios</option>
+<option value="negocio">Crear negocio</option>
+<option value="pc">Comprar computadora</option>
+<option value="celular">Comprar celular</option>
+<option value="moto">Comprar moto</option>
+<option value="inversion">Invertir dinero</option>
+<option value="emergencia">Fondo de emergencia</option>
+
+</select>
+
+<label>Costo de la meta (COP)</label>
+<input type="number" id="costoMeta">
+
+<button onclick="calcular()">Calcular Plan de Ahorro</button>
+
+</div>
+
+<div class="resultado">
+
+<h2 id="resultadoTexto"></h2>
+
+<img id="imagenMeta">
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
